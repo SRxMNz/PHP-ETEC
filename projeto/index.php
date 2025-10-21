@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main class="container">
     <h1>Cadastro de usúario</h1>
 
-<form action="#" method= "post">
+<form action="include/cadastrar.php" method= "post">
+<div class="md-3">
+    <label for="primeiroNome">Primeiro Nome</label>
+    <input type="text" name="primeiroNome" id="primeiroNome" placeholder="Digite o seu primeiro nome..."
+    maxlength= "50" required autofocus>
+</div>
 
-<label for="primeiroNome">Primeiro Nome</label>
-<input type="text" name="primeiroNome" id="primeiroNome" placeholder="Digite o seu primeiro nome..."
-maxlength= "50" required autofocus>
-
+<div class="md-3">
 <label for="sobrenome">Sobrenome</label>
 <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome..."
 maxlength= "50" required>
-
-<label for="escolhaPets">escolha seu pet</label>
+</div>
+<div class="md-3">
+<label for="escolhaPets">ESCOLHA SEU PET</label>
 <select name="escolhaPets" id="escolhaPets">
     <option value="nenhum">Nenhum</option>
     <option value="cachorro">Cachorro</option>
     <option value="gato">Gato</option>
     <option value="calopsita">Calopsita</option>
-    <option value="calopsita">Cerberus</option>
+    <option value="Cerberus">Cerberus</option>
+    <option value="perry">Perry o ornintorrico</option>
 </select>
+</div>
 
-<button type="submit">Enviar</button>
-<button type="reset">Limpar</button>
+<button class="btn btn-success" type="submit">Enviar</button>
+<button class="btn btn-danger" type="reset">Limpar</button>
+
+</main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
