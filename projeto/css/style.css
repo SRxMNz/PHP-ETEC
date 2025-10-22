@@ -15,7 +15,7 @@ body{
 main {
     background-color: #d3d3d33a;
     border-radius: 10px;
-    padding: 20px;
+    padding: 50px 0;
     width: 50%;
     max-width: 200px;
     margin: 20px 0 0 0;
@@ -36,7 +36,7 @@ input {
 select {
     padding: 10px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 button {
